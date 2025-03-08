@@ -1,0 +1,15 @@
+0 silly argv {
+0 silly argv   _: [ 'create' ],
+0 silly argv   lernaVersion: '8.2.1',
+0 silly argv   '$0': '..\\..\\..\\..\\AppData\\Roaming\\npm\\node_modules\\lerna\\dist\\cli.js',
+0 silly argv   name: 'core'
+0 silly argv }
+1 notice cli v8.2.1
+2 verbose packageConfigs Explicit "packages" configuration found in lerna.json. Resolving packages using the configured glob(s): ["packages/*"]
+3 verbose rootPath C:\Users\Administrator\Desktop\新建文件夹\workspace\cookie-cli-dev
+4 error Error: Command failed with exit code 1: git config --get user.name
+4 error     at makeError (C:\Users\Administrator\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\lib\error.js:59:11)
+4 error     at module.exports.sync (C:\Users\Administrator\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:186:17)
+4 error     at execSync (C:\Users\Administrator\AppData\Roaming\npm\node_modules\lerna\node_modules\@lerna\create\dist\command.js:1505:31)
+4 error     at CreateCommand.gitConfig (C:\Users\Administrator\AppData\Roaming\npm\node_modules\lerna\node_modules\@lerna\create\dist\command.js:5482:16)
+4 error     at CreateCommand.initialize (C:\Users\Administrator\AppData\Roaming\npm\node_modules\lerna\node_modules\@lerna\create\dist\command.js:5413:50)
