@@ -1,6 +1,6 @@
 {
   "name": "@cookie-cli-dev/core",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "cookie-cli-dev core",
   "author": "HuangHhuang <970787223@qq.com>",
   "homepage": "",
@@ -23,7 +23,7 @@
     "test": "node ./__tests__/core.test.js"
   },
   "dependencies": {
-    "@cookie-cli-dev/utils": "^0.0.2"
+    "@cookie-cli-dev/utils": "^0.0.3"
   },
   "gitHead": "d4d5e185b7f3bda8adec17ba08c24d900bc7fb84"
 }
