@@ -12,11 +12,7 @@ importers:
         specifier: ^8.2.1
         version: 8.2.1(encoding@0.1.13)
 
-  packages/core:
-    dependencies:
-      '@cookie-cli-dev/utils':
-        specifier: link:../utils
-        version: link:../utils
+  packages/core: {}
 
   packages/utils: {}
 
