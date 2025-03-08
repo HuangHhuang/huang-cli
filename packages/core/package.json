@@ -13,6 +13,9 @@
     "lib": "lib",
     "test": "__tests__"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "lib"
   ],
@@ -20,6 +23,7 @@
     "test": "node ./__tests__/core.test.js"
   },
   "dependencies": {
-    "@cookie-cli-dev/utils": "link:../utils"
-  }
+    "@cookie-cli-dev/utils": "^0.0.2"
+  },
+  "gitHead": "d4d5e185b7f3bda8adec17ba08c24d900bc7fb84"
 }
