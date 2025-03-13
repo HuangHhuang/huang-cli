@@ -22,5 +22,9 @@
   "scripts": {
     "test": "node ./__tests__/core.test.js"
   },
+  "dependencies": {
+    "@cookie-cli-dev/utils": "workspace:*",
+    "import-local": "^3.2.0"
+  },
   "gitHead": "d4d5e185b7f3bda8adec17ba08c24d900bc7fb84"
 }

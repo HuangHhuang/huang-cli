@@ -1,17 +1,23 @@
-42 error Error: Command failed with exit code 1: pnpm install --lockfile-only --ignore-scripts
-42 error Scope: all 3 workspace projects
-42 error  WARN  `node_modules` is present. Lockfile only installation will make it out-of-date
-42 error Progress: resolved 1, reused 0, downloaded 0, added 0
-42 error C:\Users\Administrator\Desktop\新建文件夹\workspace\cookie-cli-dev\packages\core:
-42 error  ERR_PNPM_FETCH_404  GET https://registry.npmjs.org/@cookie-cli-dev%2Futils: Not Found - 404
-42 error
-42 error This error happened while installing a direct dependency of C:\Users\Administrator\Desktop\新建文件夹\workspace\cookie-cli-dev\packages\core
-42 error
-42 error @cookie-cli-dev/utils is not in the npm registry, or you have no permission to fetch it.
-42 error
-42 error An authorization header was used: Bearer npm_[hidden]
-42 error     at makeError (C:\Users\Administrator\Desktop\新建文件夹\workspace\cookie-cli-dev\node_modules\.pnpm\execa@5.0.0\node_modules\execa\lib\error.js:59:11)
-42 error     at handlePromise (C:\Users\Administrator\Desktop\新建文件夹\workspace\cookie-cli-dev\node_modules\.pnpm\execa@5.0.0\node_modules\execa\index.js:114:26)
-42 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-42 error     at async VersionCommand.updatePackageVersions (C:\Users\Administrator\Desktop\新建文件夹\workspace\cookie-cli-dev\node_modules\.pnpm\lerna@8.2.1_encoding@0.1.13\node_modules\lerna\dist\index.js:9868:11)
-42 error     at async Promise.all (index 0)
+0 silly argv {
+0 silly argv   _: [ 'version' ],
+0 silly argv   lernaVersion: '8.2.1',
+0 silly argv   '$0': '..\\..\\..\\..\\AppData\\Roaming\\npm\\node_modules\\lerna\\dist\\cli.js'
+0 silly argv }
+1 notice cli v8.2.1
+2 verbose packageConfigs Explicit "packages" configuration found in lerna.json. Resolving packages using the configured glob(s): ["packages/*"]
+3 verbose rootPath C:\Users\Administrator\Desktop\新建文件夹\workspace\cookie-cli-dev
+4 info current version 0.0.5
+5 silly isAnythingCommitted
+6 verbose isAnythingCommitted 1
+7 silly getCurrentBranch
+8 verbose currentBranch master
+9 silly remoteBranchExists
+10 silly isBehindUpstream
+11 error Error: Command failed with exit code 1: git remote update
+11 error fatal: unable to access 'https://github.com/HuangHhuang/huang-cli.git/': HTTP/2 stream 1 was not closed cleanly before end of the underlying stream
+11 error     at makeError (C:\Users\Administrator\Desktop\新建文件夹\workspace\cookie-cli-dev\node_modules\.pnpm\execa@5.0.0\node_modules\execa\lib\error.js:59:11)
+11 error     at module.exports.sync (C:\Users\Administrator\Desktop\新建文件夹\workspace\cookie-cli-dev\node_modules\.pnpm\execa@5.0.0\node_modules\execa\index.js:186:17)
+11 error     at Object.execSync (C:\Users\Administrator\Desktop\新建文件夹\workspace\cookie-cli-dev\node_modules\.pnpm\lerna@8.2.1_encoding@0.1.13\node_modules\lerna\dist\index.js:1579:31)
+11 error     at updateRemote (C:\Users\Administrator\Desktop\新建文件夹\workspace\cookie-cli-dev\node_modules\.pnpm\lerna@8.2.1_encoding@0.1.13\node_modules\lerna\dist\index.js:9204:18)
+11 error     at isBehindUpstream (C:\Users\Administrator\Desktop\新建文件夹\workspace\cookie-cli-dev\node_modules\.pnpm\lerna@8.2.1_encoding@0.1.13\node_modules\lerna\dist\index.js:9194:3)
+11 error     at VersionCommand.initialize (C:\Users\Administrator\Desktop\新建文件夹\workspace\cookie-cli-dev\node_modules\.pnpm\lerna@8.2.1_encoding@0.1.13\node_modules\lerna\dist\index.js:9488:57)

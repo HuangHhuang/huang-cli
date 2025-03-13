@@ -12,7 +12,14 @@ importers:
         specifier: ^8.2.1
         version: 8.2.1(encoding@0.1.13)
 
-  packages/core: {}
+  packages/core:
+    dependencies:
+      '@cookie-cli-dev/utils':
+        specifier: workspace:*
+        version: link:../utils
+      import-local:
+        specifier: ^3.2.0
+        version: 3.2.0
 
   packages/utils: {}
 
@@ -982,6 +989,11 @@ packages:
 
   import-local@3.1.0:
     resolution: {integrity: sha512-ASB07uLtnDs1o6EHjKpX34BKYDSqnFerfTOJL2HvMqF70LnxpjkzDB8J44oT9pu4AMPkQwf8jl6szgvNd2tRIg==}
+    engines: {node: '>=8'}
+    hasBin: true
+
+  import-local@3.2.0:
+    resolution: {integrity: sha512-2SPlun1JUPWoM6t3F0dw0FkCF/jWY8kttcY4f599GLTSjh2OCuuhdTkJQsEcZzBqbXZGKMK2OqW1oZsjtf/gQA==}
     engines: {node: '>=8'}
     hasBin: true
 
@@ -3234,6 +3246,11 @@ snapshots:
       resolve-from: 4.0.0
 
   import-local@3.1.0:
+    dependencies:
+      pkg-dir: 4.2.0
+      resolve-cwd: 3.0.0
+
+  import-local@3.2.0:
     dependencies:
       pkg-dir: 4.2.0
       resolve-cwd: 3.0.0

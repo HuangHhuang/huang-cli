@@ -1,3 +1,10 @@
 #!/usr/bin/env node
 
-console.log("Hello huang-cli!");
+const importLocal = require("import-local");
+
+if (importLocal(__filename)) {
+  console.log("本地");
+  require("npmlog").info("cli", "using local cli");
+} else {
+  require("../lib")(process.argv.slice(2));
+}
