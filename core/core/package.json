@@ -5,7 +5,8 @@
   "author": "HuangHhuang <970787223@qq.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "lib/core.js",
+  "type": "module",
+  "main": "lib/index.js",
   "bin": {
     "huang": "bin/index.js"
   },
@@ -23,8 +24,18 @@
     "test": "node ./__tests__/core.test.js"
   },
   "dependencies": {
-    "@cookie-cli-dev/utils": "workspace:*",
-    "import-local": "^3.2.0"
+    "@cookie-cli-dev/get-npm-info": "file:..\\..\\utils\\get-npm-info",
+    "@cookie-cli-dev/log": "file:..\\..\\utils\\log",
+    "@cookie-cli-dev/init": "file:..\\..\\commands\\init",
+    "@cookie-cli-dev/exec": "file:..\\exec",
+    "commander": "^13.1.0",
+    "dotenv": "^16.4.7",
+    "import-local": "^3.2.0",
+    "npmlog": "^7.0.1",
+    "path-exists": "^4.0.0",
+    "picocolors": "^1.1.1",
+    "semver": "^7.7.1",
+    "teal-node-utils": "^2.0.1"
   },
   "gitHead": "d4d5e185b7f3bda8adec17ba08c24d900bc7fb84"
 }
