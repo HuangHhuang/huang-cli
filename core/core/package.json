@@ -1,6 +1,6 @@
 {
   "name": "@cookie-cli-dev/core",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "cookie-cli-dev core",
   "author": "HuangHhuang <970787223@qq.com>",
   "homepage": "",
@@ -24,10 +24,10 @@
     "test": "node ./__tests__/core.test.js"
   },
   "dependencies": {
-    "@cookie-cli-dev/get-npm-info": "file:..\\..\\utils\\get-npm-info",
-    "@cookie-cli-dev/log": "file:..\\..\\utils\\log",
-    "@cookie-cli-dev/init": "file:..\\..\\commands\\init",
     "@cookie-cli-dev/exec": "file:..\\exec",
+    "@cookie-cli-dev/get-npm-info": "file:..\\..\\utils\\get-npm-info",
+    "@cookie-cli-dev/init": "file:..\\..\\commands\\init",
+    "@cookie-cli-dev/log": "file:..\\..\\utils\\log",
     "commander": "^13.1.0",
     "dotenv": "^16.4.7",
     "import-local": "^3.2.0",

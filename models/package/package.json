@@ -1,6 +1,6 @@
 {
   "name": "@cookie-cli-dev/package",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "cookie-cli-dev package",
   "author": "HuangHhuang <970787223@qq.com>",
   "homepage": "https://github.com/HuangHhuang/huang-cli#readme",
@@ -29,8 +29,8 @@
   },
   "dependencies": {
     "@cookie-cli-dev/format-path": "file:..\\..\\utils\\format-path",
-    "@cookie-cli-dev/utils": "file:..\\..\\utils\\utils",
     "@cookie-cli-dev/get-npm-info": "file:..\\..\\utils\\get-npm-info",
+    "@cookie-cli-dev/utils": "file:..\\..\\utils\\utils",
     "npminstall": "^7.12.0",
     "pkg-dir": "^8.0.0"
   }

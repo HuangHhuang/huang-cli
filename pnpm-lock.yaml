@@ -4,16 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  cookie-cli-dev: link:..\..\..\..\AppData\Roaming\pnpm\global\5\node_modules\cookie-cli-dev
-
 importers:
 
   .:
-    dependencies:
-      cookie-cli-dev:
-        specifier: link:../../../../AppData/Roaming/pnpm/global/5/node_modules/cookie-cli-dev
-        version: link:../../../../AppData/Roaming/pnpm/global/5/node_modules/cookie-cli-dev
     devDependencies:
       lerna:
         specifier: ^8.2.1
@@ -24,13 +17,13 @@ importers:
   core/core:
     dependencies:
       '@cookie-cli-dev/exec':
-        specifier: workspace:*
+        specifier: file:..\exec
         version: link:../exec
       '@cookie-cli-dev/get-npm-info':
         specifier: file:..\..\utils\get-npm-info
         version: link:../../utils/get-npm-info
       '@cookie-cli-dev/init':
-        specifier: workspace:*
+        specifier: file:..\..\commands\init
         version: link:../../commands/init
       '@cookie-cli-dev/log':
         specifier: file:..\..\utils\log
@@ -63,22 +56,22 @@ importers:
   core/exec:
     dependencies:
       '@cookie-cli-dev/log':
-        specifier: workspace:*
+        specifier: file:..\..\utils\log
         version: link:../../utils/log
       '@cookie-cli-dev/package':
-        specifier: workspace:*
+        specifier: file:..\..\models\package
         version: link:../../models/package
 
   models/package:
     dependencies:
       '@cookie-cli-dev/format-path':
-        specifier: workspace:*
+        specifier: file:..\..\utils\format-path
         version: link:../../utils/format-path
       '@cookie-cli-dev/get-npm-info':
-        specifier: workspace:*
+        specifier: file:..\..\utils\get-npm-info
         version: link:../../utils/get-npm-info
       '@cookie-cli-dev/utils':
-        specifier: workspace:*
+        specifier: file:..\..\utils\utils
         version: link:../../utils/utils
       npminstall:
         specifier: ^7.12.0
