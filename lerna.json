@@ -7,6 +7,5 @@
     "models/*",
     "utils/*"
   ],
-  "npmClient": "pnpm",
-  "useWorkspaces": true
+  "npmClient": "pnpm"
 }
