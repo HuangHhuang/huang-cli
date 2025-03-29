@@ -28,7 +28,8 @@
     "url": "https://github.com/HuangHhuang/huang-cli/issues"
   },
   "dependencies": {
-    "@cookie-cli-dev/log": "file:..\\..\\utils\\log",
-    "@cookie-cli-dev/package": "file:..\\..\\models\\package"
-  }
+    "@cookie-cli-dev/log": "^0.0.7",
+    "@cookie-cli-dev/package": "^0.0.7"
+  },
+  "gitHead": "7f4977dc13ba4be8c41b5c836d6eff7dbd99ebbc"
 }

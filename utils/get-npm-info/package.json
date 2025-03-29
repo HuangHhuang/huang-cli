@@ -24,9 +24,13 @@
   "bugs": {
     "url": "https://github.com/HuangHhuang/huang-cli/issues"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "axios": "^1.8.4",
     "semver": "^7.7.1",
     "url-join": "^5.0.0"
-  }
+  },
+  "gitHead": "7f4977dc13ba4be8c41b5c836d6eff7dbd99ebbc"
 }
